@@ -18,7 +18,7 @@ frontend:
   port: 8080
 advanced:
   pan_id: 710
-  channel: 11
+  channel: 15
   network_key:
     - 3
     - 0
@@ -558,8 +558,6 @@ devices:
     optimistic: true
     qos: 2
     retain: false
-  '0x000d6f0010b4e96e':
-    friendly_name: '0x000d6f0010b4e96e'
 groups:
   '1':
     friendly_name: Dining-Room-Light
@@ -569,10 +567,10 @@ groups:
     retain: true
     retention: 300
     devices:
-      - 0xb0ce18140302c0eb/1
+      - 0xb0ce18140301c80c/1
       - 0xb0ce18140302f720/1
       - 0xb0ce18140302d9cf/1
-      - 0xb0ce18140301c80c/1
+      - 0xb0ce18140302c0eb/1
   '2':
     friendly_name: Living-Room-Tree-Light
     optimistic: true
@@ -581,6 +579,6 @@ groups:
     retain: true
     retention: 300
     devices:
-      - 0xb0ce18140000dbd0/1
       - 0xb0ce18140000dd0b/1
       - 0xb0ce18140000e982/1
+      - 0xb0ce18140000dbd0/1
