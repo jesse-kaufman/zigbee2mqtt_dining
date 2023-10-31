@@ -11,9 +11,9 @@ mqtt:
   version: 5
   include_device_information: false
 serial:
-  port: tcp://dining-room-coordinator.local:6638
+  port: tcp://dining-room-coordinator.home:6638
   baudrate: 115200
-  disable_led: false
+  adapter: zstack
 frontend:
   port: 8080
 advanced:
@@ -48,7 +48,7 @@ advanced:
     pid: process.pid
     port: 51
     protocol: udp4
-    type: '5424'
+    type: "5424"
   last_seen: ISO_8601_local
   output: json
   log_level: info
@@ -77,7 +77,7 @@ device_options:
       enabled_by_default: true
 availability: true
 devices:
-  '0x187a3efffe0f43e8':
+  "0x187a3efffe0f43e8":
     friendly_name: Dining-Room-Presence-Sensor
     homeassistant:
       battery_low:
@@ -90,7 +90,7 @@ devices:
     legacy: false
     optimistic: true
     qos: 2
-  '0x282c02bfffeb7cb5':
+  "0x282c02bfffeb7cb5":
     friendly_name: Dining-Room-Printer-Outlet
     state_action: false
     homeassistant:
@@ -106,7 +106,7 @@ devices:
     qos: 2
     retain: true
     retention: 299
-  '0x282c02bfffeb6f0d':
+  "0x282c02bfffeb6f0d":
     friendly_name: Robovac-Charging-Station-Outlet
     homeassistant:
       battery_low:
@@ -121,7 +121,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x00124b002a2e85b8':
+  "0x00124b002a2e85b8":
     friendly_name: Living-Room-Entry-Router
     disabled: false
     homeassistant:
@@ -137,7 +137,7 @@ devices:
     qos: 2
     retain: false
     retention: 300
-  '0x00158d000926ff48':
+  "0x00158d000926ff48":
     friendly_name: Dining-Room-Button
     legacy: false
     homeassistant:
@@ -150,7 +150,7 @@ devices:
       name: Dining Room Button
     optimistic: true
     qos: 2
-  '0x00158d00087477b4':
+  "0x00158d00087477b4":
     friendly_name: Living-Room-Entry-Button
     homeassistant:
       battery_low:
@@ -164,7 +164,7 @@ devices:
     optimistic: true
     qos: 2
     retain: false
-  '0xb0ce18140302c0eb':
+  "0xb0ce18140302c0eb":
     friendly_name: Dining-Room-Bulb-2
     homeassistant:
       battery_low:
@@ -182,7 +182,7 @@ devices:
     color_sync: true
     state_action: false
     transition: 1
-  '0xb0ce18140301c80c':
+  "0xb0ce18140301c80c":
     friendly_name: Dining-Room-Bulb-3
     homeassistant:
       battery_low:
@@ -200,7 +200,7 @@ devices:
     color_sync: true
     state_action: false
     transition: 1
-  '0xb0ce18140302d9cf':
+  "0xb0ce18140302d9cf":
     friendly_name: Dining-Room-Bulb-1
     homeassistant:
       battery_low:
@@ -218,7 +218,7 @@ devices:
     color_sync: true
     state_action: false
     transition: 1
-  '0xb0ce18140302f720':
+  "0xb0ce18140302f720":
     friendly_name: Dining-Room-Bulb-4
     homeassistant:
       battery_low:
@@ -236,7 +236,7 @@ devices:
     color_sync: true
     state_action: false
     transition: 1
-  '0x00158d0008f3481e':
+  "0x00158d0008f3481e":
     friendly_name: Front-Door-Vibration-Sensor
     homeassistant:
       battery_low:
@@ -252,7 +252,7 @@ devices:
     retain: true
     retention: 298
     vibration_timeout: 90
-  '0x000d6f0010b66eea':
+  "0x000d6f0010b66eea":
     friendly_name: Mailbox-Contact-Sensor
     homeassistant:
       battery_low:
@@ -267,7 +267,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0xb0ce1814001814d7':
+  "0xb0ce1814001814d7":
     friendly_name: Porch-Light
     homeassistant:
       battery_low:
@@ -285,7 +285,7 @@ devices:
     transition: 1
     color_sync: true
     state_action: false
-  '0x282c02bfffe84583':
+  "0x282c02bfffe84583":
     friendly_name: Dining-Room-Motion-Sensor
     homeassistant:
       battery_low:
@@ -300,7 +300,7 @@ devices:
     qos: 2
     retain: true
     retention: 30
-  '0x00158d0009413d29':
+  "0x00158d0009413d29":
     friendly_name: Living-Room-Multi-Sensor
     homeassistant:
       battery_low:
@@ -315,7 +315,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x282c02bfffe84660':
+  "0x282c02bfffe84660":
     friendly_name: Living-Room-Entry-Motion-Sensor
     homeassistant:
       battery_low:
@@ -330,7 +330,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0xb0ce18140000dbd0':
+  "0xb0ce18140000dbd0":
     friendly_name: Tree-Light-Bulb-1
     homeassistant:
       battery_low:
@@ -348,7 +348,7 @@ devices:
     transition: 1
     color_sync: true
     state_action: false
-  '0xb0ce18140000dd0b':
+  "0xb0ce18140000dd0b":
     friendly_name: Tree-Light-Bulb-2
     transition: 1
     color_sync: true
@@ -366,7 +366,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0xb0ce18140000e982':
+  "0xb0ce18140000e982":
     friendly_name: Tree-Light-Bulb-3
     homeassistant:
       battery_low:
@@ -384,7 +384,7 @@ devices:
     transition: 1
     color_sync: true
     state_action: false
-  '0xb0ce18140000daa3':
+  "0xb0ce18140000daa3":
     friendly_name: Living-Room-Shelf-Lamp
     homeassistant:
       battery_low:
@@ -402,7 +402,7 @@ devices:
     transition: 1
     color_sync: true
     state_action: false
-  '0xb0ce1814000101ef':
+  "0xb0ce1814000101ef":
     friendly_name: Living-Room-Entry-Sconce
     homeassistant:
       battery_low:
@@ -420,7 +420,7 @@ devices:
     transition: 1
     color_sync: true
     state_action: false
-  '0xb0ce181400010556':
+  "0xb0ce181400010556":
     friendly_name: Living-Room-Sconce
     homeassistant:
       battery_low:
@@ -438,7 +438,7 @@ devices:
     transition: 1
     color_sync: true
     state_action: false
-  '0x187a3efffe0040e0':
+  "0x187a3efffe0040e0":
     friendly_name: Living-Room-Presence-Sensor
     homeassistant:
       battery_low:
@@ -453,7 +453,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x282c02bfffeb4790':
+  "0x282c02bfffeb4790":
     friendly_name: TV-Outlet
     state_action: false
     homeassistant:
@@ -469,7 +469,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x00158d00094d3f75':
+  "0x00158d00094d3f75":
     friendly_name: Living-Room-Button
     legacy: false
     homeassistant:
@@ -482,7 +482,7 @@ devices:
       name: Living Room Button
     optimistic: true
     qos: 2
-  '0x000d6f001048ad4a':
+  "0x000d6f001048ad4a":
     friendly_name: Front-Door-Contact-Sensor
     homeassistant:
       battery_low:
@@ -497,7 +497,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x000d6f00111e6f7f':
+  "0x000d6f00111e6f7f":
     friendly_name: Upstairs-Door
     homeassistant:
       battery_low:
@@ -512,7 +512,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0xa4c13875c7922c23':
+  "0xa4c13875c7922c23":
     friendly_name: Porch-Motion-Sensor
     disabled: false
     homeassistant:
@@ -528,7 +528,7 @@ devices:
     qos: 2
     retain: true
     retention: 30
-  '0x282c02bfffeb6957':
+  "0x282c02bfffeb6957":
     friendly_name: Dining-Room-Lamp
     state_action: false
     homeassistant:
@@ -544,7 +544,7 @@ devices:
     qos: 2
     retain: true
     retention: 30
-  '0x00124b002a2e9128':
+  "0x00124b002a2e9128":
     friendly_name: Dining-Room-Router
     homeassistant:
       battery_low:
@@ -559,7 +559,7 @@ devices:
     qos: 2
     retain: false
 groups:
-  '1':
+  "1":
     friendly_name: Dining-Room-Light
     optimistic: true
     qos: 2
@@ -571,7 +571,7 @@ groups:
       - 0xb0ce18140302f720/1
       - 0xb0ce18140302d9cf/1
       - 0xb0ce18140302c0eb/1
-  '2':
+  "2":
     friendly_name: Living-Room-Tree-Light
     optimistic: true
     qos: 2
