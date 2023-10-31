@@ -39,6 +39,8 @@ advanced:
   homeassistant_legacy_entity_attributes: false
   legacy_api: false
   legacy_availability_payload: false
+  log_output:
+    - console
   log_syslog:
     app_name: zigbee2mqtt_dining
     eol: /n
